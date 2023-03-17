@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibrosNexos.Domain", "LibrosNexos.Domain\LibrosNexos.Domain.csproj", "{A6877EC9-ED84-4F44-BB46-613A07FF0E15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibrosNexos.Infrastucture", "LibrosNexos.Infrastucture\LibrosNexos.Infrastucture.csproj", "{EA0D100E-E2D8-4B14-A9E4-6418CBE96514}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibrosNexos.Persistence", "LibrosNexos.Persistence\LibrosNexos.Persistence.csproj", "{84F7350B-E631-406D-BA3D-7E0C67C05223}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibrosNexos.Service", "LibrosNexos.Service\LibrosNexos.Service.csproj", "{72D03360-1016-4ED1-B610-60609C6C8508}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibrosNexos.WebApi", "LibrosNexos.WebApi\LibrosNexos.WebApi.csproj", "{C9FB3FAB-6C6C-4708-80A1-AFE00AD40939}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6877EC9-ED84-4F44-BB46-613A07FF0E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6877EC9-ED84-4F44-BB46-613A07FF0E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6877EC9-ED84-4F44-BB46-613A07FF0E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6877EC9-ED84-4F44-BB46-613A07FF0E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA0D100E-E2D8-4B14-A9E4-6418CBE96514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0D100E-E2D8-4B14-A9E4-6418CBE96514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0D100E-E2D8-4B14-A9E4-6418CBE96514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0D100E-E2D8-4B14-A9E4-6418CBE96514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84F7350B-E631-406D-BA3D-7E0C67C05223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84F7350B-E631-406D-BA3D-7E0C67C05223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84F7350B-E631-406D-BA3D-7E0C67C05223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84F7350B-E631-406D-BA3D-7E0C67C05223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72D03360-1016-4ED1-B610-60609C6C8508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72D03360-1016-4ED1-B610-60609C6C8508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72D03360-1016-4ED1-B610-60609C6C8508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72D03360-1016-4ED1-B610-60609C6C8508}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9FB3FAB-6C6C-4708-80A1-AFE00AD40939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9FB3FAB-6C6C-4708-80A1-AFE00AD40939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9FB3FAB-6C6C-4708-80A1-AFE00AD40939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9FB3FAB-6C6C-4708-80A1-AFE00AD40939}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C880AA81-B5B0-401A-A863-173405BD001F}
+	EndGlobalSection
+EndGlobal
