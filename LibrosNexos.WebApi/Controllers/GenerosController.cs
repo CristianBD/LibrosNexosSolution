@@ -3,7 +3,6 @@ using LibrosNexos.Domain.Common;
 using LibrosNexos.Infrastucture.ViewModel;
 using LibrosNexos.Persistence.Context.IContext;
 using LibrosNexos.Service.Contract;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibrosNexos.WebApi.Controllers
@@ -25,7 +24,8 @@ namespace LibrosNexos.WebApi.Controllers
                 return Ok(new ResponseCommon<GeneroViewModel>
                 {
                     Success = true,
-                    Results = generos
+                    Results = generos,
+                    Message = "Exito."
                 });
             }
             catch (Exception)
@@ -33,6 +33,37 @@ namespace LibrosNexos.WebApi.Controllers
 
                 throw;
             }
+        }
+
+        [HttpPost("CreateGenero")]
+        public async Task<IActionResult> CreateGenero(string genero)
+        {
+            try
+            {
+                var result = await _repositoryManager.GenerosRepository.CreateGenero(genero);
+                return Ok(new ResponseCommon<bool>
+                {
+                    Success = true,
+                    Result = result
+                });
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpPost("DeleteGenero")]
+
+        public async Task<IActionResult> DeleteGenero(int? id, string? nombre)
+        {
+            var result = await _repositoryManager.GenerosRepository.DeleteGenero(id, nombre);
+            return Ok(new ResponseCommon<bool>
+            {
+                Success = true,
+                Result = result
+            });
         }
     }
 }

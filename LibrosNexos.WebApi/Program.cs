@@ -30,6 +30,12 @@ var mappingConfig = new MapperConfiguration(mc =>
     mc.AddProfile(new TBL_GENEROS_GenerosViewModel());
 });
 
+//Cors
+builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
+{
+    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+}));
+
 IMapper mapper = mappingConfig.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
@@ -42,7 +48,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthorization();
-
+app.UseCors("corsapp");
 app.MapControllers();
 
 app.Run();
